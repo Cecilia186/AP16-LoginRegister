@@ -1,56 +1,128 @@
-# Welcome to your Expo app 👋
+# AP16 - Sistem Login dan Registrasi
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikasi Login dan Registrasi sederhana yang dibuat menggunakan React Native dan Expo untuk memenuhi tugas Praktikum Pemrograman Mobile.
 
-## Get started
+## Fitur Aplikasi
 
-1. Install dependencies
+- Halaman Login dengan kolom email dan password.
+- Halaman Registrasi dengan kolom nama, email, password, dan konfirmasi password.
+- Validasi format email.
+- Validasi password.
+- Pemeriksaan kecocokan password dan konfirmasi password.
+- Validasi input secara langsung.
+- Pesan kesalahan jika data yang dimasukkan tidak sesuai.
+- Indikator loading saat proses registrasi.
+- Pengaturan keyboard agar lebih nyaman digunakan.
+- Navigasi antara halaman Login dan Registrasi.
 
-   ```bash
-   npm install
-   ```
+## Teknologi yang Digunakan
 
-2. Start the app
+- React Native
+- Expo
+- TypeScript
+- JavaScript
+- Visual Studio Code
 
-   ```bash
-   npx expo start
-   ```
+## Struktur Folder Project
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+AP16-LoginRegister/
+├── src/
+│   ├── app/
+│   │   ├── index.tsx
+│   │   ├── _layout.tsx
+│   │   └── explore.tsx
+│   ├── screens/
+│   │   ├── LoginScreen.tsx
+│   │   └── RegisterScreen.tsx
+│   └── utils/
+│       └── validators.ts
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+## Cara Menjalankan Aplikasi
 
-### Other setup steps
+Ikuti langkah-langkah berikut untuk menjalankan project di komputer.
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+1. Clone repository dari GitHub:
 
-## Learn more
+```bash
+git clone https://github.com/Cecilia186/AP16-LoginRegister.git
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. Masuk ke folder project:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+cd AP16-LoginRegister
+```
 
-## Join the community
+3. Install semua dependency:
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Jalankan aplikasi Expo:
+
+```bash
+npx expo start
+```
+
+5. Scan QR Code yang muncul menggunakan aplikasi Expo Go di HP.
+
+## Pengujian Aplikasi
+
+Beberapa bagian yang dapat diuji dari aplikasi ini:
+
+- Melakukan registrasi dengan data yang benar.
+- Memeriksa pesan validasi ketika kolom belum diisi.
+- Memasukkan format email yang salah.
+- Memasukkan password yang tidak sesuai ketentuan.
+- Memeriksa apakah password dan konfirmasi password sudah sama.
+- Melakukan login menggunakan akun yang sudah didaftarkan.
+- Mencoba login dengan email atau password yang salah.
+- Berpindah dari halaman Login ke halaman Registrasi dan sebaliknya.
+- Memeriksa tampilan aplikasi saat keyboard muncul.
+
+## Catatan Keamanan
+
+Aplikasi ini dibuat untuk menunjukkan proses dasar login dan registrasi serta validasi data dari sisi aplikasi.
+
+Data akun yang didaftarkan hanya disimpan sementara menggunakan state aplikasi. Aplikasi ini belum menggunakan server backend atau database, sehingga data akun tidak tersimpan secara permanen.
+
+## Kendala dan Solusi
+
+**1. Validasi Input**
+
+Kendala: Memastikan pengguna memasukkan data dengan format yang benar.
+
+Solusi: Membuat fungsi validasi untuk memeriksa nama, email, password, dan konfirmasi password.
+
+**2. Pengaturan Keyboard**
+
+Kendala: Kolom input terkadang tertutup oleh keyboard saat pengguna mengetik.
+
+Solusi: Menggunakan pengaturan keyboard agar pengguna lebih mudah mengisi formulir.
+
+**3. Navigasi Login dan Registrasi**
+
+Kendala: Menghubungkan halaman Login dan Registrasi agar bisa digunakan secara bergantian.
+
+Solusi: Menggunakan state React untuk berpindah halaman dan mengirimkan data akun yang sudah didaftarkan ke halaman Login.
+
+## Expo Snack
+
+Aplikasi juga dapat dicoba melalui Expo Snack pada link berikut:
+
+https://snack.expo.dev/@cecilia186/ap16_loginregister_cecilia
+
+## Identitas Pembuat
+
+**Nama:** Cecilia
+
+**NIM:** 253303620009
+
+**Universitas:** Universitas Prima Indonesia
+
+**Mata Kuliah:** Pemrograman Mobile
