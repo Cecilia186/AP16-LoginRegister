@@ -111,11 +111,13 @@ Kendala: Menghubungkan halaman Login dan Registrasi agar bisa digunakan secara b
 
 Solusi: Menggunakan state React untuk berpindah halaman dan mengirimkan data akun yang sudah didaftarkan ke halaman Login.
 
-## Expo Snack
+## Expo snack dan link tugas lainnya
 
 Aplikasi juga dapat dicoba melalui Expo Snack pada link berikut:
 
 https://snack.expo.dev/@cecilia186/ap16_loginregister_cecilia
+
+link teori di google doc; https://docs.google.com/document/d/1L5-kNgW3YN5DUXqRqye8PD7rNgjbqQ4hVnOljXbbC2I/edit?usp=sharing
 
 ## Identitas Pembuat
 
